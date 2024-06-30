@@ -3,9 +3,12 @@ from nada_dsl import *
 
 def nada_main():
     party1 = Party(name="Party1")
-    my_int1 = SecretInteger(Input(name="my_int1", party=party1))
-    my_int2 = SecretInteger(Input(name="my_int2", party=party1))
+    party2 = Party(name="Party2")
+    A = SecretInteger(Input(name="A", party=party1))
+    B = SecretInteger(Input(name="B", party=party2))
+    C = SecretInteger(Input(name="C", party=party1))
+    D = SecretInteger(Input(name="D", party=party2))
 
-    # write the computation for your program here - use my_int1 and my_int2 as inputs
+    sailesh kumar x pranav
 
-    return [Output(my_int1, "my_output", party1)]
+    return [Output(result, "my_output", party1)]
